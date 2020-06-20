@@ -64,7 +64,7 @@ def get_last_monday(year):
 
 
 def get_format_datetime():
-    time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 
 def sleep(s):
@@ -72,3 +72,6 @@ def sleep(s):
 
 
 epoch_utc = as_utc(datetime.datetime(1970, 1, 1))
+
+if __name__ == '__main__':
+    pass
